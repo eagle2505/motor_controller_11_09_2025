@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root main_tree_to_execute="MainTree">
+  <!-- Common includes shipped with Nav2 (installed with the package)
+       If your environment cannot resolve these includes, copy their
+       contents from nav2_behavior_tree package into your repo and
+       adjust the paths. -->
+  <include path="$(find-pkg-share nav2_behavior_tree)/behavior_trees/common.xml"/>
+  <include path="$(find-pkg-share nav2_behavior_tree)/behavior_trees/navigate_to_pose_w_replanning_and_recovery.xml"/>
+
+  <BehaviorTree ID="MainTree">
+    <PipelineSequence name="NavigateThroughPoses">
+      <!-- Ensure we’re localized -->
+      <RateController hz="10">
+        <IsLocalized/>
+      </RateController>
+
+      <!-- Initialize goal checking and blackboard defaults -->
+      <SetBlackboard output_key="number_recoveries" value="0"/>
+      <SetBlackboard output_key="path_updated" value="0"/>
+
+      <!-- Main navigation with retries and simple recovery -->
+      <RecoveryNode number_of_retries="5" name="RecoveryRoot">
+
+        <!-- ACTION: Plan a path through multiple poses -->
+        <ComputePathThroughPoses
+            planner_id="GridBased"
+            path="path"
+            path_updated="path_updated"
+            use_start="false"
+            start=""/>
+        <!-- ACTION: Follow the computed path -->
+        <FollowPath
+            server_timeout="10"
+            controller_id="FollowPath"
+            path="path"/>
+
+        <!-- RECOVERY subtree -->
+        <Sequence name="StandardRecoveries">
+          <!-- Clear local costmap, then replan -->
+          <ClearLocalCostmap/>
+          <ClearGlobalCostmap/>
+
+          <!-- Spin in place to free from obstacles -->
+          <Spin spin_dist="1.57" retry="false"/>
+
+          <!-- Wait a bit and try again -->
+          <Wait wait_duration="2"/>
+
+          <!-- Back up slightly to get unstuck -->
+          <BackUp backup_dist="0.15" backup_speed="0.05"/>
+
+          <!-- Reinitialize global localization if needed -->
+          <ReinitializeGlobalLocalization/>
+        </Sequence>
+      </RecoveryNode>
+    </PipelineSequence>
+  </BehaviorTree>
+</root>
+

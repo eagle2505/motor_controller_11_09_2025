@@ -1,0 +1,233 @@
+source /opt/ros/humble/setup.bash && source install/setup.bash && ros2 launch motor_control localization.launch.py
+[INFO] [launch]: All log files can be found below /home/eagle/.ros/log/2025-08-08-16-42-10-311770-eagle-desktop-75492
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [static_transform_publisher-1]: process started with pid [75502]
+[INFO] [static_transform_publisher-2]: process started with pid [75504]
+[INFO] [static_transform_publisher-3]: process started with pid [75506]
+[INFO] [robot_state_publisher-4]: process started with pid [75508]
+[INFO] [joint_state_publisher-5]: process started with pid [75510]
+[INFO] [rplidar_composition-6]: process started with pid [75512]
+[INFO] [map_server-7]: process started with pid [75514]
+[INFO] [amcl-8]: process started with pid [75518]
+[INFO] [controller_server-9]: process started with pid [75530]
+[INFO] [planner_server-10]: process started with pid [75548]
+[INFO] [bt_navigator-11]: process started with pid [75553]
+[INFO] [waypoint_follower-12]: process started with pid [75556]
+[INFO] [lifecycle_manager-13]: process started with pid [75559]
+[INFO] [motor_controller-14]: process started with pid [75565]
+[INFO] [rviz2-15]: process started with pid [75571]
+[amcl-8] [INFO] [1754656931.967268121] [amcl]: 
+[amcl-8] 	amcl lifecycle node launched. 
+[amcl-8] 	Waiting on external lifecycle transitions to activate
+[amcl-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-8] [INFO] [1754656931.986217897] [amcl]: Creating
+[planner_server-10] [INFO] [1754656932.672806051] [planner_server]: 
+[planner_server-10] 	planner_server lifecycle node launched. 
+[planner_server-10] 	Waiting on external lifecycle transitions to activate
+[planner_server-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-10] [INFO] [1754656932.701439859] [planner_server]: Creating
+[waypoint_follower-12] [INFO] [1754656932.723036099] [waypoint_follower]: 
+[waypoint_follower-12] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-12] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-12] [INFO] [1754656932.735165755] [waypoint_follower]: Creating
+[static_transform_publisher-1] [INFO] [1754656932.963179375] [static_tf_map_to_odom]: Spinning until stopped - publishing transform
+[static_transform_publisher-1] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-1] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-1] from 'map' to 'odom'
+[static_transform_publisher-2] [INFO] [1754656933.089403701] [static_tf_base_to_link]: Spinning until stopped - publishing transform
+[static_transform_publisher-2] translation: ('0.000000', '0.000000', '0.070000')
+[static_transform_publisher-2] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-2] from 'base_footprint' to 'base_link'
+[static_transform_publisher-3] [INFO] [1754656933.100174972] [static_tf_laser]: Spinning until stopped - publishing transform
+[static_transform_publisher-3] translation: ('0.000000', '0.000000', '0.305000')
+[static_transform_publisher-3] rotation: ('-0.000000', '0.000000', '1.000000', '-0.000004')
+[static_transform_publisher-3] from 'base_link' to 'laser'
+[rplidar_composition-6] [INFO] [1754656933.482514835] [rplidar_composition]: RPLIDAR running on ROS 2 package rplidar_ros. SDK Version: '1.12.0'
+[bt_navigator-11] [INFO] [1754656933.839082145] [bt_navigator]: 
+[bt_navigator-11] 	bt_navigator lifecycle node launched. 
+[bt_navigator-11] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-11] [INFO] [1754656933.839736089] [bt_navigator]: Creating
+[lifecycle_manager-13] [INFO] [1754656934.036688710] [lifecycle_manager_navigation]: Creating
+[controller_server-9] [INFO] [1754656934.115597942] [controller_server]: 
+[controller_server-9] 	controller_server lifecycle node launched. 
+[controller_server-9] 	Waiting on external lifecycle transitions to activate
+[controller_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-13] [INFO] [1754656934.196937567] [lifecycle_manager_navigation]: Creating and initializing lifecycle service clients
+[robot_state_publisher-4] [INFO] [1754656934.712337651] [robot_state_publisher]: got segment back_left_wheel
+[robot_state_publisher-4] [INFO] [1754656934.712769379] [robot_state_publisher]: got segment back_right_wheel
+[robot_state_publisher-4] [INFO] [1754656934.712810404] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-4] [INFO] [1754656934.712824421] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-4] [INFO] [1754656934.712836037] [robot_state_publisher]: got segment front_left_wheel
+[robot_state_publisher-4] [INFO] [1754656934.712846662] [robot_state_publisher]: got segment front_right_wheel
+[robot_state_publisher-4] [INFO] [1754656934.712857446] [robot_state_publisher]: got segment laser
+[planner_server-10] [INFO] [1754656935.098026947] [global_costmap.global_costmap]: 
+[planner_server-10] 	global_costmap lifecycle node launched. 
+[planner_server-10] 	Waiting on external lifecycle transitions to activate
+[planner_server-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-9] [INFO] [1754656935.106947527] [controller_server]: Creating controller server
+[planner_server-10] [INFO] [1754656935.181910504] [global_costmap.global_costmap]: Creating Costmap
+[map_server-7] [INFO] [1754656935.748338520] [map_server]: 
+[map_server-7] 	map_server lifecycle node launched. 
+[map_server-7] 	Waiting on external lifecycle transitions to activate
+[map_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-7] [INFO] [1754656935.771817388] [map_server]: Creating
+[rplidar_composition-6] [INFO] [1754656936.062527269] [rplidar_composition]: RPLIDAR S/N: B1C3ED95C4E493CBA5E69EF020134B6F
+[rplidar_composition-6] [INFO] [1754656936.062741388] [rplidar_composition]: Firmware Ver: 1.29
+[rplidar_composition-6] [INFO] [1754656936.062771790] [rplidar_composition]: Hardware Rev: 7
+[rplidar_composition-6] [INFO] [1754656936.065096002] [rplidar_composition]: RPLidar health status : '0'
+[lifecycle_manager-13] [INFO] [1754656936.241322783] [lifecycle_manager_navigation]: Waiting for service map_server/get_state...
+[rplidar_composition-6] [INFO] [1754656936.611281267] [rplidar_composition]: current scan mode: Sensitivity, max_distance: 12.0 m, Point number: 7.9K , angle_compensate: 2, flip_x_axis 0
+[controller_server-9] [INFO] [1754656937.455907862] [local_costmap.local_costmap]: 
+[controller_server-9] 	local_costmap lifecycle node launched. 
+[controller_server-9] 	Waiting on external lifecycle transitions to activate
+[controller_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-9] [INFO] [1754656937.575560269] [local_costmap.local_costmap]: Creating Costmap
+[lifecycle_manager-13] [INFO] [1754656938.640264131] [lifecycle_manager_navigation]: Starting managed nodes bringup...
+[lifecycle_manager-13] [INFO] [1754656938.645302266] [lifecycle_manager_navigation]: Configuring map_server
+[map_server-7] [INFO] [1754656938.662707986] [map_server]: Configuring
+[map_server-7] [INFO] [1754656938.663019549] [map_io]: Loading yaml file: /home/eagle/Desktop/aaqil/motor2/install/motor_control/share/motor_control/maps/2.yaml
+[map_server-7] [INFO] [1754656938.663930174] [map_io]: resolution: 0.05
+[map_server-7] [INFO] [1754656938.663971936] [map_io]: origin[0]: -0.9
+[map_server-7] [INFO] [1754656938.663982976] [map_io]: origin[1]: -1.25
+[map_server-7] [INFO] [1754656938.663991201] [map_io]: origin[2]: 0
+[map_server-7] [INFO] [1754656938.663998945] [map_io]: free_thresh: 0.25
+[map_server-7] [INFO] [1754656938.664006337] [map_io]: occupied_thresh: 0.65
+[map_server-7] [INFO] [1754656938.664017090] [map_io]: mode: trinary
+[map_server-7] [INFO] [1754656938.664030082] [map_io]: negate: 0
+[map_server-7] [INFO] [1754656938.664569974] [map_io]: Loading image_file: /home/eagle/Desktop/aaqil/motor2/install/motor_control/share/motor_control/maps/2.pgm
+[map_server-7] [INFO] [1754656938.671586452] [map_io]: Read map /home/eagle/Desktop/aaqil/motor2/install/motor_control/share/motor_control/maps/2.pgm: 41 X 48 map @ 0.05 m/cell
+[lifecycle_manager-13] [INFO] [1754656938.968051741] [lifecycle_manager_navigation]: Configuring amcl
+[amcl-8] [INFO] [1754656938.971106796] [amcl]: Configuring
+[amcl-8] [INFO] [1754656938.971459513] [amcl]: initTransforms
+[amcl-8] [INFO] [1754656939.502284285] [amcl]: initPubSub
+[amcl-8] [INFO] [1754656939.735832634] [amcl]: Subscribed to map topic.
+[lifecycle_manager-13] [INFO] [1754656939.907192710] [lifecycle_manager_navigation]: Configuring controller_server
+[controller_server-9] [INFO] [1754656939.908483029] [controller_server]: Configuring controller interface
+[controller_server-9] [INFO] [1754656939.910981584] [controller_server]: getting goal checker plugins..
+[controller_server-9] [INFO] [1754656939.911383358] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-9] [INFO] [1754656939.911533124] [local_costmap.local_costmap]: Configuring
+[controller_server-9] [INFO] [1754656940.082790252] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-9] [INFO] [1754656940.273498966] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-9] [INFO] [1754656940.586771329] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-9] [INFO] [1754656940.588354267] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-9] [INFO] [1754656940.601734880] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[amcl-8] [INFO] [1754656940.924211642] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656939.657 for reason 'discarding message because the queue is full'
+[controller_server-9] [INFO] [1754656940.975538049] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[amcl-8] [INFO] [1754656940.976641705] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656939.780 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656940.976929171] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656939.903 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-9] [INFO] [1754656940.987614295] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-9] [INFO] [1754656940.995052037] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-9] [INFO] [1754656941.039189959] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[amcl-8] [INFO] [1754656941.042808234] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656940.040 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-9] [INFO] [1754656941.105958303] [controller_server]: Setting transform_tolerance to 0.500000
+[amcl-8] [INFO] [1754656941.165901278] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656940.161 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656941.298068444] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656940.296 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656941.421004042] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656940.420 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656941.543383844] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656940.541 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-9] [INFO] [1754656941.580068952] [controller_server]: Using critic "dwb_critics::ObstacleFootprintCritic" (dwb_critics::ObstacleFootprintCritic)
+[controller_server-9] [INFO] [1754656941.614583484] [controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1754656941.623614820] [controller_server]: Using critic "dwb_critics::PathAlignCritic" (dwb_critics::PathAlignCritic)
+[controller_server-9] [INFO] [1754656941.662835988] [controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1754656941.671047518] [controller_server]: Using critic "dwb_critics::GoalAlignCritic" (dwb_critics::GoalAlignCritic)
+[amcl-8] [INFO] [1754656941.677647149] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656940.677 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-9] [INFO] [1754656941.698239769] [controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1754656941.706464003] [controller_server]: Using critic "dwb_critics::PathDistCritic" (dwb_critics::PathDistCritic)
+[controller_server-9] [INFO] [1754656941.721393857] [controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1754656941.742236022] [controller_server]: Using critic "dwb_critics::GoalDistCritic" (dwb_critics::GoalDistCritic)
+[controller_server-9] [INFO] [1754656941.757825452] [controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1754656941.758051540] [controller_server]: Controller Server has FollowPath  controllers available.
+[amcl-8] [INFO] [1754656941.807838435] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656940.799 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656941.929961076] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656940.923 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[lifecycle_manager-13] [INFO] [1754656942.037876865] [lifecycle_manager_navigation]: Configuring planner_server
+[planner_server-10] [INFO] [1754656942.039532605] [planner_server]: Configuring
+[planner_server-10] [INFO] [1754656942.039719076] [global_costmap.global_costmap]: Configuring
+[amcl-8] [INFO] [1754656942.066289192] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656941.057 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656942.188705572] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656941.180 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-10] [INFO] [1754656942.214073500] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-10] [INFO] [1754656942.255907595] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[amcl-8] [INFO] [1754656942.312649110] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656941.303 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-10] [INFO] [1754656942.349992322] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-10] [INFO] [1754656942.350210730] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-10] [INFO] [1754656942.426894953] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[amcl-8] [INFO] [1754656942.439092740] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656941.438 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656942.572689717] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656941.561 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656942.685881506] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656941.684 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656942.820140811] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656941.819 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656942.942591528] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656941.941 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-10] [INFO] [1754656943.007706883] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-10] [INFO] [1754656943.007922379] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-10] [INFO] [1754656943.033073532] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[amcl-8] [INFO] [1754656943.066564636] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656942.065 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656943.201931149] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656942.200 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656943.323675984] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656942.323 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656943.447891277] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656942.445 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656943.599011162] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656942.595 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656943.705422608] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656942.703 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656943.827893646] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656942.826 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656943.970103480] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656942.961 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656944.092867424] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656943.084 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656944.211049985] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656943.206 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656944.343669231] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656943.342 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656944.467628706] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656943.464 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656944.588782512] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656943.587 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656944.723644271] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656943.722 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-10] [FATAL] [1754656944.845258605] [planner_server]: Failed to create global planner. Exception: According to the loaded plugin descriptions the class nav2_navfn_planner::NavfnPlanner with base class type nav2_core::GlobalPlanner does not exist. Declared types are  nav2_navfn_planner/NavfnPlanner nav2_smac_planner/SmacPlanner2D nav2_smac_planner/SmacPlannerHybrid nav2_smac_planner/SmacPlannerLattice nav2_theta_star_planner/ThetaStarPlanner
+[amcl-8] [INFO] [1754656944.848001521] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656943.845 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[lifecycle_manager-13] [ERROR] [1754656944.857974075] [lifecycle_manager_navigation]: Failed to change state for node: planner_server
+[lifecycle_manager-13] [ERROR] [1754656944.858174370] [lifecycle_manager_navigation]: Failed to bring up all requested nodes. Aborting bringup.
+[amcl-8] [INFO] [1754656944.992315751] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656943.968 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656945.104719767] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656944.103 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656945.227496031] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656944.226 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656945.350075425] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656944.349 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656945.485036259] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656944.484 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656945.683924630] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656944.607 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656945.778591139] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656944.729 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656945.870188511] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656944.865 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656946.002344444] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656944.987 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656946.161186562] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656945.110 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656946.305953736] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656945.245 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656946.369418728] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656945.368 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656946.498510518] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656945.491 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656946.630255267] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656945.628 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656946.750391308] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656945.749 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[joint_state_publisher-5] [INFO] [1754656946.839989088] [joint_state_publisher]: Waiting for robot_description to be published on the robot_description topic...
+[amcl-8] [INFO] [1754656946.878008996] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656945.873 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[motor_controller-14] [INFO] [1754656946.919907125] [motor_controller]: Attempting to connect to serial port /dev/ttyACM0...
+[amcl-8] [INFO] [1754656947.008311518] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656946.007 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-15] [INFO] [1754656947.107271974] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-15] [INFO] [1754656947.116601048] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[amcl-8] [INFO] [1754656947.195981050] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656946.130 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656947.279457424] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656946.253 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-15] [INFO] [1754656947.303576859] [rviz2]: Stereo is NOT SUPPORTED
+[amcl-8] [INFO] [1754656947.389441480] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656946.388 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656947.511670364] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656946.511 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656947.646741059] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656946.646 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656947.778230535] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656946.768 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656947.892654049] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656946.891 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656948.027436125] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656947.026 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656948.150542801] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656947.149 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656948.273238999] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656947.272 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656948.411545587] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656947.407 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656948.532264592] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656947.531 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656948.653950993] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656947.653 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656948.790095039] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656947.789 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656948.912420727] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656947.911 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[motor_controller-14] [INFO] [1754656948.924302726] [motor_controller]: Successfully connected to serial port
+[motor_controller-14] [INFO] [1754656948.927009864] [motor_controller]: MotorController node initialized
+[motor_controller-14] [ERROR] [1754656949.010286711] [motor_controller]: Unexpected error in read_serial_data: The 'nanosec' field must be an unsigned integer in [0, 4294967295]
+[amcl-8] [INFO] [1754656949.038041575] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656948.034 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-15] [ERROR] [1754656949.071865170] [rviz2]: Lookup would require extrapolation into the future.  Requested time 1754656949.173758 but the latest data is at time 1754656949.057474, when looking up transform from frame [laser] to frame [map]
+[amcl-8] [INFO] [1754656949.169287234] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656948.168 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656949.294037170] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656948.291 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656949.429748368] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656948.414 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656949.559012452] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656948.553 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656949.673942032] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656948.672 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656949.800821773] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656948.795 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-8] [INFO] [1754656949.931934596] [amcl]: Message Filter dropping message: frame 'laser' at time 1754656948.931 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[motor_controller-14] [ERROR] [1754656950.014360404] [motor_controller]: Unexpected error in read_serial_data: The 'nanosec' field must be an unsigned integer in [0, 4294967295]
+[motor_controller-14] [ERROR] [1754656951.009162495] [motor_controller]: Unexpected error in read_serial_data: The 'nanosec' field must be an unsigned integer in [0, 4294967295]
+[motor_controller-14] [ERROR] [1754656952.008713368] [motor_controller]: Unexpected error in read_serial_data: The 'nanosec' field must be an unsigned integer in [0, 4294967295]
+[motor_controller-14] [ERROR] [1754656953.008653406] [motor_controller]: Unexpected error in read_serial_data: The 'nanosec' field must be an unsigned integer in [0, 4294967295]
+
