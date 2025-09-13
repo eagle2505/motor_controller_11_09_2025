@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/lm_tara/Desktop/aaqil/lidar/unitree_lidar_sdk/examples/example_lidar_serial.cpp" "CMakeFiles/example_lidar_serial.dir/examples/example_lidar_serial.cpp.o" "gcc" "CMakeFiles/example_lidar_serial.dir/examples/example_lidar_serial.cpp.o.d"
+  "/home/intern2/Desktop/aaqil/motor_controller/unitree_lidar_sdk/examples/example_lidar_serial.cpp" "CMakeFiles/example_lidar_serial.dir/examples/example_lidar_serial.cpp.o" "gcc" "CMakeFiles/example_lidar_serial.dir/examples/example_lidar_serial.cpp.o.d"
   )
 
 # Targets to which this target links.

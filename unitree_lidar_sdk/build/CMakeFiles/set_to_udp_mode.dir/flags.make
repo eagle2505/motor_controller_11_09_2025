@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lm_tara/Desktop/aaqil/lidar/unitree_lidar_sdk/include
+CXX_INCLUDES = -I/home/intern2/Desktop/aaqil/motor_controller/unitree_lidar_sdk/include
 
 CXX_FLAGS = -std=c++17  -O3 -Wall -DNDEBUG
 

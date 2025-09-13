@@ -1,7 +1,7 @@
-/home/lm_tara/Desktop/aaqil/lidar/unitree_lidar_sdk/build/CMakeFiles/example_lidar_udp.dir
-/home/lm_tara/Desktop/aaqil/lidar/unitree_lidar_sdk/build/CMakeFiles/example_lidar_serial.dir
-/home/lm_tara/Desktop/aaqil/lidar/unitree_lidar_sdk/build/CMakeFiles/set_ip_address.dir
-/home/lm_tara/Desktop/aaqil/lidar/unitree_lidar_sdk/build/CMakeFiles/set_to_serial_mode.dir
-/home/lm_tara/Desktop/aaqil/lidar/unitree_lidar_sdk/build/CMakeFiles/set_to_udp_mode.dir
-/home/lm_tara/Desktop/aaqil/lidar/unitree_lidar_sdk/build/CMakeFiles/edit_cache.dir
-/home/lm_tara/Desktop/aaqil/lidar/unitree_lidar_sdk/build/CMakeFiles/rebuild_cache.dir
+/home/intern2/Desktop/aaqil/motor_controller/unitree_lidar_sdk/build/CMakeFiles/example_lidar_udp.dir
+/home/intern2/Desktop/aaqil/motor_controller/unitree_lidar_sdk/build/CMakeFiles/example_lidar_serial.dir
+/home/intern2/Desktop/aaqil/motor_controller/unitree_lidar_sdk/build/CMakeFiles/set_ip_address.dir
+/home/intern2/Desktop/aaqil/motor_controller/unitree_lidar_sdk/build/CMakeFiles/set_to_serial_mode.dir
+/home/intern2/Desktop/aaqil/motor_controller/unitree_lidar_sdk/build/CMakeFiles/set_to_udp_mode.dir
+/home/intern2/Desktop/aaqil/motor_controller/unitree_lidar_sdk/build/CMakeFiles/edit_cache.dir
+/home/intern2/Desktop/aaqil/motor_controller/unitree_lidar_sdk/build/CMakeFiles/rebuild_cache.dir
